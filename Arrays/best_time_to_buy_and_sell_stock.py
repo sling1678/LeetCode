@@ -45,8 +45,9 @@ class Solution:
         Assuming only ONE transaction is allowed. We can get O(n) solution by computing the most profit we will obtain if we sold that day. Of course we can sell only from day 2 onward with index 1 being day 2.
         """
 
-        if len(prices) <= 1:
-            return 0
+        # this is not needed since for loop below will already take care of this case.
+        # if len(prices) <= 1:
+        #   return 0
 
         maxProfit = 0
         minPrice = prices[0]
